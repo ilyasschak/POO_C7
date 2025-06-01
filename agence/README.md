@@ -28,7 +28,6 @@ L'agence souhaite également :
 
 ## 🧩 Contraintes techniques
 
-❌ Ne pas utiliser `public` ni de `getter/setter`  
 ✅ Utiliser les `protected` par défaut pour les attributs  
 ✅ Implémenter une méthode statique `getNombreVehicules()`  
 ✅ Redéfinir `utiliser()` dans chaque classe fille  
@@ -53,11 +52,46 @@ $vehicules = [
 
 ## ✅ Résultat attendu
 
-- Affichage complet avec modèle, année, kilométrage, et utilisation
-- Filtrage après une année donnée
-- Filtrage des véhicules avec +50 000 km
-- Affichage uniquement des véhicules électriques
-- Affichage du nombre total de véhicules
+1. **Affichage de tous les véhicules :**
+
+```
+🚗 Peugeot 208 (2019) - 48000 km : s'utilise pour des trajets confortables en ville  
+🚚 Renault Trucks D (2015) - 85000 km : s'utilise pour transporter des marchandises lourdes  
+🛵 Yadea G5 (2022) - 3000 km : s'utilise pour des déplacements courts en centre-ville  
+🚗 Citroën C3 (2020) - 56000 km : s'utilise pour des trajets confortables en ville  
+🚚 Mercedes Atego (2018) - 62000 km : s'utilise pour transporter des marchandises lourdes  
+🛵 NIU NQi (2021) - 12000 km : s'utilise pour des déplacements courts en centre-ville  
+```
+
+2. **Véhicules mis en circulation après 2018 :**
+
+```
+🚘 Peugeot 208 (2019) : s'utilise pour des trajets confortables en ville  
+🚘 Yadea G5 (2022) : s'utilise pour des déplacements courts en centre-ville  
+🚘 Citroën C3 (2020) : s'utilise pour des trajets confortables en ville  
+🚘 NIU NQi (2021) : s'utilise pour des déplacements courts en centre-ville  
+```
+
+3. **Nombre total de véhicules enregistrés :**
+
+```
+Total de véhicules enregistrés : 6
+```
+
+4. **Véhicules avec plus de 50 000 km :**
+
+```
+🔧 Renault Trucks D (2015) - 85000 km : s'utilise pour transporter des marchandises lourdes  
+🔧 Citroën C3 (2020) - 56000 km : s'utilise pour des trajets confortables en ville  
+🔧 Mercedes Atego (2018) - 62000 km : s'utilise pour transporter des marchandises lourdes  
+```
+
+5. **Véhicules électriques :**
+
+```
+⚡ Yadea G5 (2022) : s'utilise pour des déplacements courts en centre-ville  
+⚡ NIU NQi (2021) : s'utilise pour des déplacements courts en centre-ville  
+```
 
 ---
 
